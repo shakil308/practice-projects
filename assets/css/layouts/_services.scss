@@ -1,0 +1,85 @@
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3,31.6%);
+    grid-gap: 30px;
+    text-align: center;
+    .single-services {
+        padding: 15px 20px;
+        box-shadow: 0px 0px 5px 0px;
+        transition: .2s;
+        &:hover{
+            border-bottom: 3px solid $primary_color;
+            margin-bottom: -3px;
+        }
+        i {
+            font-size: 24px;
+            margin-bottom: 30px;
+          }
+          h4 {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 9px;
+          }
+          
+      }
+  }
+
+  .process-area{
+    background-size: cover;
+    background-position: center;
+    color: $white_color;
+    .process{
+        display: grid;
+        grid-template-columns: repeat(4,23%);
+        grid-column-gap: 30px;
+        .single-process{
+            h4{
+                    text-transform: capitalize;
+                    font-size: 24px;
+                    background: $deep_color;
+                    padding: 5px 8px;
+                    border-radius: 5px;
+                    position: relative;
+                span{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: $primary_color;
+                    padding: 5px 20px;
+                }
+            }
+            p{
+                margin-top: 15px;
+                text-align: center;
+            }
+            
+        }
+    }
+  }
+
+  .counter-area{
+    .counter {
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        grid-column-gap: 30px;
+        .single-counter {
+            text-align: center;
+            color: $white_color;
+            i {
+                font-size: 32px;
+              }
+              h4 {
+                font-size: 22px;
+                text-transform: capitalize;
+                font-weight: 500;
+                span {
+                    display: block;
+                    font-size: 50px;
+                    font-weight: 700;
+                  }
+              }
+          }
+      }
+  }
+  

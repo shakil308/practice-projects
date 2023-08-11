@@ -1,0 +1,14 @@
+.header-area {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}/*# sourceMappingURL=all.css.map */

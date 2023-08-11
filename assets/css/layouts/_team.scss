@@ -1,0 +1,119 @@
+.team-area{
+    .team {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-column-gap: 30px;
+        .single-team {
+            height: 350px;
+            background-size: cover;
+            background-position: top;
+            position: relative;
+            overflow: hidden;
+            &:hover{
+                .team-content{
+                    opacity: 1;
+                    visibility: visible;
+                    margin-bottom: 0;
+                }
+            }
+           .team-content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: $dark_color;
+                width: 100%;
+                text-align: center;
+                color: $white_color;
+                padding: 15px 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+                margin-bottom: -30px;
+                h4 {
+                    text-transform: capitalize;
+                    font-size: 24px;
+                    span {
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                      }
+                  }
+
+                   a {
+                    color:$white_color;
+                    margin-right: 13px;
+                    transition: .3s;
+                    &:hover{
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.video-area{
+    background-size: cover;
+    .video {
+        color: #fff;
+        text-align: center;
+         a {
+            font-size: 50px;
+            display: inline-block;
+            margin-bottom: 30px;
+            color: $white_color;
+        }
+         h4 {
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+
+.price {
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	grid-column-gap: 30px;
+    .single-price{
+        text-align: center;
+        border: 1px solid #333;
+        padding: 25px;
+        &.active{
+            h3{
+                background-color: $primary_color;
+                color:$white_color;
+            }
+        }
+
+        h5 {
+            text-transform: capitalize;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 47px;
+            background: #f2f2f2;
+            span {
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+        ul{
+            li{
+                padding: 15px 0;
+            }
+        }
+        a{
+            margin-right: 0;
+            margin-top: 20px;
+        }
+    }
+}
